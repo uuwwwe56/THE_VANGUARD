@@ -1,0 +1,94 @@
+/* NAVBAR */
+.navbar{
+    height: 60px;
+}
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 6px;
+
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    transition: transform 0.25s ease-out;
+}
+
+  .nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  /* ======= PRODUK =======*/
+
+  /* Kategori */
+  .list-group{
+    position: fixed;
+    top: 150px;
+    left: 20px;
+    z-index: 1;
+    width: 250px;
+  }
+    .card-slider {
+    cursor: grab;
+    user-select: none; /*agar gabisa d select*/
+  }
+  .card-slider:active {
+    cursor: grabbing;
+  }
+  
+  /* scrol bwh hilng */
+.produk::-webkit-scrollbar{
+  display: none; 
+}
+
+.card-hover-scale{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover-scale:hover{
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+/* Cegah gambar terseret */
+.card-img-top {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Produk */
+.card {
+  min-height: 100%; /* Pastikan tinggi card minimal 100% agar sejajar dengan card lain */
+  display: flex; /* Gunakan flexbox untuk layout */
+  flex-direction: column; /* Susun konten secara vertikal */
+}
+
+.card-body {
+  flex: 1; /* Isi sisa ruang dalam card */
+  display: flex; /* Jadikan card-body flex container */
+  flex-direction: column; /* Susun kontennya dari atas ke bawah */
+  justify-content: space-between; /* Jarak antar elemen merata secara vertikal */
+}
+
+.card-img-top {
+  object-fit: cover; /* Gambar memenuhi area dengan crop jika perlu, tidak merusak rasio */
+  height: 250px; /* Semua gambar diatur tinggi tetap agar tidak loncat-loncat */
+}
+
+.rating{
+    color: gold;
+}
