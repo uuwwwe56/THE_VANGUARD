@@ -1,6 +1,9 @@
+
 /* NAVBAR */
 .navbar{
     height: 60px;
+    backdrop-filter: blur(10px);
+  background: rgba(0, 102, 255, 0.75); /* biru transparan */
 }
 .nav-link{
     color: white;
@@ -33,6 +36,21 @@
     transform: translateX(-50%) scaleX(1);
   }
 
+  /* Background navbar item saat mode HP */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    background: blue; /* transparan soft */
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: white !important;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background: rgba(255,255,255,0.3);
+  }
+}
+
 
   /*======== HOME =======*/
 *{
@@ -41,7 +59,7 @@ padding: 0;
 box-sizing: border-box;
 }
 .slider{
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -111,6 +129,30 @@ box-sizing: border-box;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+/* ====== ABOUT ====== */
+.about-tekss{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ul-about{
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+/*======= BLOG ====== */
+.blog-card{
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px,rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
   /* ======= PRODUK =======*/
 
   /* Kategori */
@@ -170,3 +212,5 @@ box-sizing: border-box;
 .rating{
     color: gold;
 }
+
+
