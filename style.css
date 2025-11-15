@@ -60,24 +60,24 @@ box-sizing: border-box;
 }
 
 .slider figure:nth-child(1){
-  background-image: url(gambar/b1.jpg);
+  background-image: url(gambar/h1.jpg);
   animation-delay: 0s;
 }
 .slider figure:nth-child(2){
-  background-image: url(gambar/b2.jpg);
+  background-image: url(gambar/h2.jpg);
   animation-delay:-4s;
 }
 .slider figure:nth-child(3){
-  background-image: url(gambar/b3.jpg);
+  background-image: url(gambar/h3.jpg);
   animation-delay: -8s;
 }
 .slider figure:nth-child(4){
-  background-image: url(gambar/b4.jpg);
+  background-image: url(gambar/h4.jpg);
   animation-delay: -12s;
 }
 
 .slider figure:nth-child(5){
-  background-image: url(gambar/b5.jpg);
+  background-image: url(gambar/h5.jpg);
   animation-delay: -16s;
 }
 
@@ -111,6 +111,10 @@ box-sizing: border-box;
 .content h1{
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: monospace;
+}
+.content p{
+  font-size: 20px;
 }
 
 /* ====== ABOUT ====== */
