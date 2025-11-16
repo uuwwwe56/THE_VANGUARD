@@ -1,8 +1,12 @@
-
 /* NAVBAR */
+.navbar-nav{
+  margin: 0 auto;
+}
 .navbar-brand img {
   display: block;
+  margin-left: 50px;
 }
+
 .nav-link{
     color: white;
     text-transform: uppercase;
@@ -33,7 +37,42 @@
   .nav-link:hover::after {
     transform: translateX(-50%) scaleX(1);
   }
+  .dropdown-item {
+    
+    font-weight: 500;
+    letter-spacing: 1px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 6px; /* Space for underline */
+  }
 
+  .dropdown-item::after {
+    content: '';
+    position: absolute;
+    bottom: 1px; /* 3px spacing from text mengukur hover garis */
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 2px;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .dropdown-item:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+.dropdown button{
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 30px;
+  color: aliceblue;
+  text-transform: uppercase;
+}
 
   /*======== HOME =======*/
 *{
@@ -141,18 +180,9 @@ box-sizing: border-box;
 
 
   /* ======= PRODUK =======*/
-
-  /* Kategori */
-  .list-group{
-    position: fixed;
-    top: 150px;
-    left: 20px;
-    z-index: 1;
-    width: 250px;
-  }
-    .card-slider {
+  .card-slider {
     cursor: grab;
-    user-select: none; /*agar gabisa d select*/
+    user-select: none;
   }
   .card-slider:active {
     cursor: grabbing;
