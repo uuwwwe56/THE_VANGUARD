@@ -304,5 +304,50 @@ nav{
     color: gold;
 }
 
+/* FOOTER */
+ .social-btn {
+    transition: 0.25s ease-in-out;
+  }
+  .social-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  }
+  /* FOOTER RESPONSIVE UNTUK HP */
+@media (max-width: 767px) {
+
+  /* Buat semua kolom center */
+  .footerr {
+    text-align: center;
+  }
+
+  .footerr h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footerr p,
+  .footerr ul li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* List biar tidak mepet */
+  .footerr ul {
+    padding-left: 0 !important;
+  }
+
+  .footerr ul li {
+    margin-bottom: 6px;
+  }
+
+  /* Paragraf biar center & tidak terlalu lebar */
+  .footerr p {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 
 
