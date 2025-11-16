@@ -11,28 +11,31 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-primary sticky-top ">
+  <nav class="navbar navbar-expand-lg nav-custom sticky-top ">
       <div class="container-fluid">
        <span class="navbar-brand ms-3"><img src="gambar/Vg.png" alt="" width="100px"></span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ">
-            <li class="nav-item px-3">
+            <li class="nav-item px-1">
               <a class="nav-link " href="#home">Home</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item px-1">
               <a class="nav-link" href="#blog">Blog</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item px-1">
               <a class="nav-link" href="#promo">Promo</a>
             </li>
-             <li class="nav-item px-3  dropdown">
+             <li class="nav-item px-1  dropdown">
               <div class="dropdown ">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Produk
@@ -45,21 +48,24 @@
                 </ul>
               </div>
             </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#contact">Contack</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- SLIDER HOME       -->
-    <div class="slider">
+    <div class="slider" id="home" >
       <figure></figure>
       <figure></figure>
       <figure></figure>
       <figure></figure>
       <figure></figure>
       <div class="content">
-        <h1>Vanguard</h1>
-        <p>
+        <h1 data-aos="fade-up">Vanguard</h1>
+        <p data-aos="fade-up">
           Simplicity meets style. Pilihan pakaian premium untuk look yang soft,
           rapi, dan aesthetic
         </p>
@@ -71,8 +77,9 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-8">
           <p
-            class="text-muted mb-4 fs-4"
+            class=" mb-4 fs-4 "
             style="font-size: 1.05rem; line-height: 1.7"
+            data-aos="fade-up"
           >
             Vanguard adalah brand streetwear yang menggabungkan simplicity,
             comfort, dan karakter. Kita bikin outfit yang gampang dipake kemana
@@ -82,49 +89,51 @@
 
           <!-- 3 Feature Mini Box -->
           <div class="row mt-3">
-            <div class="col-md-4">
-              <div class="p-3 rounded shadow-sm h-100">
+            <div class="col-md-4" data-aos="fade-left">
+              <div class="p-3 rounded shadow-sm h-100 card-1">
                 <h5 class="fw-semibold mb-1">Effortless Style</h5>
-                <p class="small text-muted mb-0">
+                <p class="small mb-0">
                   Simple, rapi, dan nyaman dipake harian.
                 </p>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="p-3 rounded shadow-sm h-100">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="p-3 rounded shadow-sm h-100 card-1">
                 <h5 class="fw-semibold mb-1">Detail-Oriented</h5>
-                <p class="small text-muted mb-0">
+                <p class="small text mb-0">
                   Detail kecil yang bikin look lo beda.
                 </p>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="p-3 rounded shadow-sm h-100">
+            <div class="col-md-4 " data-aos="fade-right">
+              <div class="p-3 rounded shadow-sm h-100 card-1">
                 <h5 class="fw-semibold mb-1">Authentic Vibes</h5>
-                <p class="small text-muted mb-0">
+                <p class="small mb-0">
                   Nggak ikut arus — lo bikin arusnya sendiri.
                 </p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
 
       <!-- BLOG -->
-   <div class="container-fluid py-5" id="blog">
-    <div class="container">
+   <div class="container-fluid py-5" id="blog" >
+    <div class="container" data-aos="fade-down"
+     data-aos-easing="linear">
 
-      <h2 class="text-center text-dark font-monospace mt-4 pb-2 fw-bold">BLOG</h2>
-      <div class="blog-card">
+      <h2 class="text-center text-white font-monospace mt-4 pb-2 fw-bold">BLOG</h2>
+      <div class="blog-card ft">
         <h5>Tips Memilih Outfit Kasual untuk Kuliah</h5>
         <p>Tampil rapi dan tetap santai ke kampus? Bisa banget! Simak tips memilih outfit kasual yang nyaman tapi tetap stylish buat aktivitas harianmu di kelas. Mulai dari mix and match kemeja, kaos, jeans, hingga sneakers yang pas untuk gaya kuliahmu.</p>
         <a href="https://glints.com/id/lowongan/outfit-kuliah/" target="_blank">Baca selengkapnya »</a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card ft">
         <h5 >Inspirasi Fashion Pria Minimalis ala Korea</h5>
         <p >
           Gaya simpel tapi tetap stylish? Temukan inspirasi fashion minimalis ala Korea yang cocok buat kamu yang suka tampil effortless tapi tetap memikat. Pilihan outfit dengan warna netral dan potongan clean akan bikin tampilanmu makin elegan!
@@ -132,7 +141,7 @@
         <a href="https://id.pinterest.com/adinindya/outfit-cowok-korea/" target="_blank">Baca selengkapnya »</a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card ft">
         <h5 >5 Tren Fashion Musim Panas 2025 yang Wajib Kamu Coba!</h5>
         <p >
           Musim panas identik dengan warna cerah dan bahan ringan. Yuk, intip 5 tren fashion terkini yang siap bikin penampilanmu makin segar dan fashionable di tahun 2025!
@@ -140,7 +149,7 @@
         <a href="https://www.fimela.com/fashion/read/5967333/tren-fashion-yang-wajib-kamu-ikuti-di-tahun-2025?page=2" target="_blank">Baca selengkapnya »</a>
       </div>
 
-      <div class="blog-card">
+      <div class="blog-card ft">
         <h5 >Gaya Kasual Pria untuk Weekend yang Nyaman dan Trendy</h5>
         <p >
           Akhir pekan adalah waktu yang pas untuk tampil gaya tanpa ribet. Mulai dari look santai hingga semi-formal, temukan 5 outfit keren yang cocok untuk jalan-jalan, nongkrong, atau hangout bareng teman!
@@ -194,7 +203,8 @@
          
         <!-- BAJU -->
            <div id="baju">
-             <h2 class="text-center  pb-1 font-monospace">Baju</h2>
+             <h2 class="text-center pb-1 font-monospace"
+     data-aos-anchor-placement="center-bottom">Baju</h2>
           <div class="row">
             <div class="card-slider produk d-flex overflow-auto gap-3 pb-3">
             
@@ -952,6 +962,12 @@
       </div>
     
     </div>
+<!-- ====================================== -->
+
+    <!-- MANDA DROPDOWN TESTIMONI,FOOTER -->
+
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -959,5 +975,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init({
+    once:true,
+    duration:1500,
+
+  });
+</script>
   </body>
 </html>

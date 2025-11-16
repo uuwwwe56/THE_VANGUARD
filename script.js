@@ -40,3 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const pops = document.querySelectorAll('[data-bs-toggle="popover"]');
+pops.forEach((el) => {
+  new bootstrap.Popover(el);
+});
