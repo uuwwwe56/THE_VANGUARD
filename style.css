@@ -158,23 +158,28 @@ nav{
 .slider figure:nth-child(1){
   background-image: url(gambar/h1.jpg);
   animation-delay: 0s;
+  
 }
 .slider figure:nth-child(2){
   background-image: url(gambar/h2.jpg);
   animation-delay:-4s;
+  
 }
 .slider figure:nth-child(3){
   background-image: url(gambar/h3.jpg);
   animation-delay: -8s;
+  
 }
 .slider figure:nth-child(4){
   background-image: url(gambar/h4.jpg);
   animation-delay: -12s;
+  
 }
 
 .slider figure:nth-child(5){
   background-image: url(gambar/h5.jpg);
   animation-delay: -16s;
+  
 }
 
 @keyframes fade{
@@ -211,6 +216,47 @@ nav{
 }
 .content p{
   font-size: 20px;
+}
+
+/* --- TAMBAHKAN BAGIAN INI DI BAWAH CSS KAMU --- */
+
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .content {
+    padding: 0 15px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+}
+
+.content h1,
+.content p {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 /* ====== ABOUT ====== */
@@ -307,6 +353,11 @@ nav{
     color: gold;
 }
 
+@media (max-width: 480px) {
+  .HP{
+    width: 70%;
+  }
+}
 /* FOOTER */
  .social-btn {
     transition: 0.25s ease-in-out;
@@ -316,7 +367,7 @@ nav{
     box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   }
   /* FOOTER RESPONSIVE UNTUK HP */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   /* Buat semua kolom center */
   .footerr {
@@ -352,5 +403,9 @@ nav{
 
 }
 
-
+@media (max-width:768px) {
+  .footer-ikuti{
+    margin-top: 100px;
+  }
+}
 
