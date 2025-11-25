@@ -210,9 +210,9 @@ nav{
 }
 
 .content h1{
-    font-size: 3rem;
+    font-size: 8rem;
     margin-bottom: 1rem;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content p{
   font-size: 20px;
